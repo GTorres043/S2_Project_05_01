@@ -6,14 +6,15 @@
    Case Problem 1
    
    Layout styles for Slate and Pencil Tutoring
-   Author: 
-   Date:   
+   Author: Gabriel Torres
+   Date:   10/24/18
    
    Filename: sp_layout.css
 
 */
 
 /* Window and Body Styles */
+/* sets the width of the whole html website and cebters the website */
 html {
     height: 100%;
 }
@@ -35,6 +36,8 @@ li {
 }
 
 /* Row Styles */
+
+/* this will prevent a container collpase */
 .row::after {
     clear: both;
     content: "";
@@ -45,6 +48,7 @@ li {
 
 
 /* Page Header Styles */
+/* This will organize headers and navigation lists to floatleft and change the padding. this will also display them all as blocks */
 header>img {
     display: block;
     width: 70%;
@@ -64,6 +68,7 @@ header nav a {
 }
 
 /* Horizontal Navigation List Styles */
+/* any list itme withing the navigation list with the class horizontal class will be displayed as a block and change width. will aslo be floated left  */
 nav.horizontal li {
     display: block;
     width: 12.5%;
@@ -71,6 +76,7 @@ nav.horizontal li {
 }
 
 /* Topics Styles */
+/* This will change any list with the id "topcis". it will give it width and also i used psuedo elements too change the margin of the first and last list item within the list.  */
 ul#topics li {
     display: block;
     width: 20%;
@@ -88,19 +94,63 @@ ul#topics li:last-of-type {
     margin-right: 7.75%;
 }
 
+ul#topics li>img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 
+}
 
 
 
 
 
 /* HR Styles */
-
+/* changes the length of the horizontal rule */
+hr {
+    width: 50%;
+}
 
 
 
 /* Customer Comment Styles */
+/* this will affect the comments it will give them thier own width and make thier margins change. */
+ul#comments {
+    width: 75%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
 
+}
 
+ul#comments li {
+    width: 50%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+ul#comments li>img {
+    width: 20%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+ul#comments li>p {
+    float: left;
+    width: 70%;
+}
 
 /* Footer Styles */
+
+footer {
+    clear: both;
+}
+
+/* i added this style so the list items wouldnt have any bullet points and it would look cleaner */
+li {
+    list-style-type:
+        none;
+}
